@@ -1,0 +1,10 @@
+<div class="report-widget">
+  <h3>Maintenance information</h3>
+  <ul class="status-list">
+      <li>
+          Maintenance mode: <span class="status circle <?php echo ($maintenanceStatus == 1 ? 'success' : 'danger'); ?>"></span> 
+          <?php echo ($maintenanceStatus == 1 ? 'on' : 'off'); ?><br />
+          <?php echo ($maintenanceStatus == 1 ? '<small>Only non-logged in users can see the maintenance page.</small>' : ''); ?>
+      </li>
+   </ul>
+</div>

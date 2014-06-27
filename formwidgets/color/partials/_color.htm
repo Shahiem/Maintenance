@@ -1,0 +1,18 @@
+<input type='text' class="custom" name="<?php echo $name; ?>" value="<?php echo $value; ?>" />
+
+<script>
+$(".custom").spectrum({
+
+	showInitial: true,
+    showInput: true,
+      change: function(color) {
+        var hsv = color.toHsv();
+        var rgb = color.toRgbString();
+        var hex = color.toHex();
+
+        $(".custom").text(hex);
+    },
+});
+
+
+</script>
