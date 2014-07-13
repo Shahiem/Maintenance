@@ -12,3 +12,5 @@
     - Bug fixed (route problem)
     - New colorpicker
     - Required asterisk
+1.0.6:
+	- Removed require ckeditor

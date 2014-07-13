@@ -19,7 +19,7 @@ tabs:
       tab: General
       span: big
       label: Content
-      type: ShahiemSeymor\Ckeditor\FormWidgets\Wysiwyg
+      type: codeeditor
       require: true
 
     logo:
