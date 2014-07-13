@@ -27,8 +27,8 @@ class Color extends FormWidgetBase
 
     public function loadAssets()
     {
-        $this->addCss('css/spectrum.css');
-        $this->addJs('js/spectrum.js');
+        $this->addCss('css/jquery.minicolors.css');
+        $this->addJs('js/jquery.minicolors.min.js');
     }
 
 

@@ -9,7 +9,8 @@ use Model;
 
 class Settings extends Model
 {
-
+    use \October\Rain\Database\Traits\Validation;
+    
     public $implement = ['System.Behaviors.SettingsModel'];
     public $settingsCode = 'maintenance_settings';
     public $settingsFields = 'fields.yaml';

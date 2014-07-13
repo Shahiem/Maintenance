@@ -8,3 +8,7 @@
     - Added formwidget (ckeditor and codeeditor) and backend changes.
 1.0.4:
     - Removed require ckeditor
+1.0.5:
+    - Bug fixed (route problem)
+    - New colorpicker
+    - Required asterisk

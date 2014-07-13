@@ -34,7 +34,7 @@ class Plugin extends PluginBase
         ];
     }
 
-    
+   
     public function registerReportWidgets()
     {
         return [

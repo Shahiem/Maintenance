@@ -13,12 +13,14 @@ tabs:
       tab: General
       span: big
       label: Title
+      required: true
 
     description:
       tab: General
       span: big
-      label: 
-      type: codeeditor
+      label: Content
+      type: ShahiemSeymor\Ckeditor\FormWidgets\Wysiwyg
+      require: true
 
     logo:
       tab: Images
