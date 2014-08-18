@@ -9,6 +9,7 @@ namespace ShahiemSeymor\Maintenance;
 use App;
 use Backend;
 use System\Classes\PluginBase;
+use System\Classes\SettingsManager;
 use Illuminate\Foundation\AliasLoader;
 
 class Plugin extends PluginBase
@@ -51,7 +52,7 @@ class Plugin extends PluginBase
             'settings' => [
                 'label'       => 'Maintenance',
                 'description' => 'Manage maintenance settings.',
-                'category'    => 'System',
+                'category'    => SettingsManager::CATEGORY_SYSTEM,
                 'class'       => 'ShahiemSeymor\Maintenance\Models\Settings',
                 'icon' => ' icon-wrench'
             ]
