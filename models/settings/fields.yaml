@@ -9,12 +9,6 @@ tabs:
       type: switch
       commentAbove: Only non-logged in users can see the maintenance page.
 
-    title:
-      tab: General
-      span: big
-      label: Title
-      required: true
-
     description:
       tab: General
       span: big
@@ -22,16 +16,20 @@ tabs:
       type: codeeditor
       require: true
 
-    logo:
-      tab: Images
-      span: left
-      type: fileupload
-      label: Upload a logo
-      options:
-        mode: image
-        image-width: 300
-        image-height: 200
+    content:
+      type: partial
+      tab: General
+      path: @/plugins/shahiemseymor/maintenance/models/settings/_url.htm
 
+    logo:
+        tab: Images
+        span: left
+        type: fileupload
+        label: Upload a logo
+        options:
+          mode: image
+          image-width: 300
+          image-height: 200
     background_image:
       tab: Images
       span: right
@@ -48,7 +46,7 @@ tabs:
       type: checkbox
       label:  Enable image background
 
-    background_repeat:
+      background_repeat:
       tab: Images
       span: right
       type: dropdown
@@ -94,15 +92,16 @@ tabs:
     enable_ga:
       tab: Google Analytics
       span: left
-      type: checkbox
-      label: Yes
-      commentAbove: Enable Google Analytics  
+      type: switch
+      label: Google Analytics  
+
     tracking_id:
       tab: Google Analytics
       span: left
       type: text
       label: Tracking ID
       commentAbove: Your Google Analytics tracking ID
+
     domain:
       tab: Google Analytics
       span: left

@@ -9,6 +9,7 @@ use Model;
 
 class Settings extends Model
 {
+    
     use \October\Rain\Database\Traits\Validation;
     
     public $implement = ['System.Behaviors.SettingsModel'];
@@ -26,11 +27,11 @@ class Settings extends Model
 
     public static function replaceWords($css)
     {
-    	$bgColor = (Settings::get('background_color') != '' ? Settings::get('background_color') : 'eee');
+    	$bgColor  = (Settings::get('background_color') != '' ? Settings::get('background_color') : 'eee');
     	$txtColor = (Settings::get('text_color') != '' ? Settings::get('text_color') : '444');
       	$commands = array("_BGCOLOR", "_TXTCOLOR");
 		$values   = array($bgColor, $txtColor);
-		$replace = str_replace($commands, $values, $css);
+		$replace  = str_replace($commands, $values, $css);
 
 		return $replace;
     } 

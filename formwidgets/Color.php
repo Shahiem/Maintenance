@@ -31,5 +31,4 @@ class Color extends FormWidgetBase
         $this->addJs('js/jquery.minicolors.min.js');
     }
 
-
 }

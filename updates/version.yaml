@@ -15,4 +15,4 @@
 1.0.6:
     - Removed require ckeditor
 1.0.7:
-    - Move into default System settings tab
+    - Added preview button, Bug fixes
