@@ -12,19 +12,37 @@ class Settings extends Model
     
     use \October\Rain\Database\Traits\Validation;
     
-    public $implement = ['System.Behaviors.SettingsModel'];
-    public $settingsCode = 'maintenance_settings';
+    public $implement      = ['System.Behaviors.SettingsModel'];
+    public $settingsCode   = 'maintenance_settings';
     public $settingsFields = 'fields.yaml';
-    public $attachOne = [
-        'logo' => ['System\Models\File'],
-        'background_image' => ['System\Models\File'],
+    public $requiredPermissions = ['acme.blog.access_dposts'];
+    public $attachOne      = [
+        'logo'             => ['System\Models\File'],
+        'background_image' => ['System\Models\File']
     ];
 
-    public $rules = [
-        'title' => 'required',
-        'description' => 'required',
+    public $rules          = [
+        'title'            => 'required',
+        'description'      => 'required'
     ];
 
+    public static function getSettingsArray()
+    {
+        $settingsArray = array(
+                                'logo'           => Settings::getLogo(), 
+                                'title'          => Settings::get('title'), 
+                                'enable_bgimage' => Settings::get('enable_bgimage'), 
+                                'bg_image'       => Settings::getBGImage(), 
+                                'bg_repeat'      => Settings::get('background_repeat'),
+                                'bg_fixed'       => Settings::get('background_fixed'),
+                                'css'            => Settings::replaceWords(Settings::get('css')), 
+                                'description'    => Settings::get('description'),
+                                'enable_ga'      => Settings::get('enable_ga'),
+                                'tracking_id'    => Settings::get('tracking_id'),
+                                'domain'         => Settings::get('domain'));
+        return $settingsArray;
+    }
+    
     public static function replaceWords($css)
     {
     	$bgColor  = (Settings::get('background_color') != '' ? Settings::get('background_color') : 'eee');
@@ -43,7 +61,7 @@ class Settings extends Model
         {
             if(Settings::find($value->id)->background_image)
             {
-              return Settings::find($value->id)->background_image->getPath();
+                return Settings::find($value->id)->background_image->getPath();
             }
         }
     } 

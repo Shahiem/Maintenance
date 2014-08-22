@@ -1,18 +1,8 @@
-1.0.1:
-    - First version
-1.0.2:
-    - Bug fixed (Route)
-    - Added form widget (Maintenance information)
-    - Added rules
-1.0.3:
-    - Added formwidget (ckeditor and codeeditor) and backend changes.
-1.0.4:
-    - Removed require ckeditor
-1.0.5:
-    - Bug fixed (route problem)
-    - New colorpicker
-    - Required asterisk
-1.0.6:
-    - Removed require ckeditor
-1.0.7:
-    - Added preview button, Bug fixes
+1.0.1: First version
+1.0.2: Bug fixed (Route), Added form widget (Maintenance information), Added rules
+1.0.3: Added formwidget (ckeditor and codeeditor) and backend changes.
+1.0.4: Removed required ckeditor
+1.0.5: Bug fixed (route problem), new colorpicker, Required asterisk
+1.0.6: Removed require ckeditor
+1.0.7: Added preview button, Bug fixes
+1.0.8: Code cleanup, added title field 

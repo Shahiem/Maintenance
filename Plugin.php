@@ -18,10 +18,10 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'Maintenance Plugin',
-            'description' => 'Maintenance system.',
-            'author' => 'ShahiemSeymor',
-            'icon' => 'icon-wrench'
+            'name'        => 'Maintenance',
+            'description' => 'Create a maintenance page and block all non-logged in users from accessing your site.',
+            'author'      => 'ShahiemSeymor',
+            'icon'        => 'icon-wrench'
         ];
     }
     
@@ -40,7 +40,7 @@ class Plugin extends PluginBase
     {
         return [
             'ShahiemSeymor\Maintenance\ReportWidgets\Maintenance' => [
-                'label' => 'Maintenance information',
+                'label'   => 'Maintenance information',
                 'context' => 'dashboard'
             ]
         ];
@@ -49,12 +49,12 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
         return [
-            'settings' => [
+            'settings'        => [
                 'label'       => 'Maintenance',
                 'description' => 'Manage maintenance settings.',
                 'category'    => SettingsManager::CATEGORY_SYSTEM,
                 'class'       => 'ShahiemSeymor\Maintenance\Models\Settings',
-                'icon' => ' icon-wrench'
+                'icon'        => 'icon-wrench'
             ]
         ];
     }

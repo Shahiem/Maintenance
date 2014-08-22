@@ -9,6 +9,12 @@ tabs:
       type: switch
       commentAbove: Only non-logged in users can see the maintenance page.
 
+    title:
+      tab: General
+      span: big
+      label: Title
+      required: true
+
     description:
       tab: General
       span: big
