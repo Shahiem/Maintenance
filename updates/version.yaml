@@ -5,4 +5,5 @@
 1.0.5: Bug fixed (route problem), new colorpicker, Required asterisk
 1.0.6: Removed require ckeditor
 1.0.7: Added preview button, Bug fixes
-1.0.8: Code cleanup, added title field 
+1.0.8: Code cleanup, added title field
+1.0.9: Code cleanup, Removed colorpicker formwidget, replace it with the default codepicker.Change the default content editor to richeditor

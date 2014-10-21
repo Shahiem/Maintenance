@@ -25,17 +25,6 @@ class Plugin extends PluginBase
         ];
     }
     
-    public function registerFormWidgets()
-    {
-        return [
-            'ShahiemSeymor\Maintenance\FormWidgets\Color' => [
-                'label' => 'Color Picker',
-                'alias' => 'colorpicker'
-            ]
-        ];
-    }
-
-   
     public function registerReportWidgets()
     {
         return [

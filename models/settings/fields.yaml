@@ -19,32 +19,35 @@ tabs:
       tab: General
       span: big
       label: Content
-      type: codeeditor
+      type: richeditor
       require: true
 
     content:
       type: partial
-      tab: General
+      tab:  General
       path: @/plugins/shahiemseymor/maintenance/models/settings/_url.htm
 
     logo:
         tab: Images
         span: left
         type: fileupload
-        label: Upload a logo
+        label: Logo
+        commentAbove: Upload a custom logo to use on the maintenance page.
         options:
           mode: image
           image-width: 300
           image-height: 200
+
     background_image:
       tab: Images
       span: right
       type: fileupload
       label: Upload a background image
+      commentAbove: Upload a bacground image to use on the maintenance page.
       options:
         mode: image
         image-width: 300
-        image-height: 200  
+        image-height: 200
 
     enable_bgimage:
       tab: Images
@@ -72,17 +75,17 @@ tabs:
     background_color:
       tab: Colors
       span: left
-      type: ShahiemSeymor\Maintenance\FormWidgets\Color
+      type: colorpicker
       label: Background color
 
     text_color:
       tab: Colors
       span: left
-      type: ShahiemSeymor\Maintenance\FormWidgets\Color
+      type: colorpicker
       label: Text color
 
     css:
-      tab: CSS
+      tab: Styles
       span: big
       stretch: true
       cssClass: no-padding
@@ -92,8 +95,8 @@ tabs:
       wrapWords: true
       fontSize: 13
       margin: 15
-      label: CSS
-      comment : Color Markers: _BGCOLOR Use this code for background color | _TXTCOLOR Use this code for text color    
+      label: Custom stylesheet
+      comment: Color Markers: _BGCOLOR Use this code for background color | _TXTCOLOR Use this code for text color    
 
     enable_ga:
       tab: Google Analytics
