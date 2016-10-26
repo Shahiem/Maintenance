@@ -25,7 +25,7 @@ tabs:
     content:
       type: partial
       tab:  General
-      path: @/plugins/shahiemseymor/maintenance/models/settings/_url.htm
+      path: plugins/shahiemseymor/maintenance/models/settings/_url.htm
 
     logo:
         tab: Images
@@ -96,7 +96,7 @@ tabs:
       fontSize: 13
       margin: 15
       label: Custom stylesheet
-      comment: Color Markers: _BGCOLOR Use this code for background color | _TXTCOLOR Use this code for text color    
+      comment: Color Markers _BGCOLOR Use this code for background color | _TXTCOLOR Use this code for text color    
 
     enable_ga:
       tab: Google Analytics
